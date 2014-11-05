@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>New Page</title>
+</head>
+
+<body>
+
+	<input id="silly" type="button" value="Do it">
+
+	<input id="clear" type="button" value="Clear">
+
+	<div id="results"></div>
+
+	<script src="js/zepto.min.js"></script>
+	<script src="js/myapp.js"></script>
+	<script>
+		$('#silly').click(function() {
+
+			SILLY.DoIt($('#results'));
+
+		});
+
+		$('#clear').click(function() {
+			$('#results').html('');
+		});
+
+	</script>
+
+</body>
+</html>
